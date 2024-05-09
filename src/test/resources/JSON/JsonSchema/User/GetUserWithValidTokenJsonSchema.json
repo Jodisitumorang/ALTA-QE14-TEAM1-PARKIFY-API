@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "code",
+    "data",
+    "message"
+  ],
+  "properties": {
+    "code": {
+      "type": "integer",
+      "default": 0,
+      "title": "The code Schema",
+      "examples": [
+        200
+      ]
+    },
+    "data": {
+      "type": "object",
+      "default": {},
+      "title": "The data Schema",
+      "required": [
+        "user_id",
+        "fullname",
+        "email",
+        "role"
+      ],
+      "properties": {
+        "user_id": {
+          "type": "integer",
+          "default": 0,
+          "title": "The user_id Schema",
+          "examples": [
+            167
+          ]
+        },
+        "fullname": {
+          "type": "string",
+          "default": "",
+          "title": "The fullname Schema",
+          "examples": [
+            "Jodi User 2"
+          ]
+        },
+        "email": {
+          "type": "string",
+          "default": "",
+          "title": "The email Schema",
+          "examples": [
+            "jodiuser2@gmail.com"
+          ]
+        },
+        "role": {
+          "type": "string",
+          "default": "",
+          "title": "The role Schema",
+          "examples": [
+            "user"
+          ]
+        }
+      },
+      "examples": [{
+        "user_id": 167,
+        "fullname": "Jodi User 2",
+        "email": "jodiuser2@gmail.com",
+        "role": "user"
+      }]
+    },
+    "message": {
+      "type": "string",
+      "default": "",
+      "title": "The message Schema",
+      "examples": [
+        "berhasil mendapatkan data"
+      ]
+    }
+  },
+  "examples": [{
+    "code": 200,
+    "data": {
+      "user_id": 167,
+      "fullname": "Jodi User 2",
+      "email": "jodiuser2@gmail.com",
+      "role": "user"
+    },
+    "message": "berhasil mendapatkan data"
+  }]
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "code",
+    "data",
+    "message"
+  ],
+  "properties": {
+    "code": {
+      "type": "integer",
+      "default": 0,
+      "title": "The code Schema",
+      "examples": [
+        200
+      ]
+    },
+    "data": {
+      "type": "object",
+      "default": {},
+      "title": "The data Schema",
+      "required": [
+        "location",
+        "city",
+        "image_loc",
+        "parking_slots"
+      ],
+      "properties": {
+        "location": {
+          "type": "string",
+          "default": "",
+          "title": "The location Schema",
+          "examples": [
+            "Danau Toba Lekkk"
+          ]
+        },
+        "city": {
+          "type": "string",
+          "default": "",
+          "title": "The city Schema",
+          "examples": [
+            "Parapat"
+          ]
+        },
+        "image_loc": {
+          "type": "string",
+          "default": "",
+          "title": "The image_loc Schema",
+          "examples": [
+            "https://res.cloudinary.com/dlosajdpy/image/upload/v1714981795/mvutqii5cxuoacmy20s5.jpg"
+          ]
+        },
+        "parking_slots": {
+          "type": "array",
+          "default": [],
+          "title": "The parking_slots Schema",
+          "items": {},
+          "examples": [
+            []
+          ]
+        }
+      },
+      "examples": [{
+        "location": "Danau Toba Lekkk",
+        "city": "Parapat",
+        "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1714981795/mvutqii5cxuoacmy20s5.jpg",
+        "parking_slots": []
+      }]
+    },
+    "message": {
+      "type": "string",
+      "default": "",
+      "title": "The message Schema",
+      "examples": [
+        "berhasil mendapatkan data"
+      ]
+    }
+  },
+  "examples": [{
+    "code": 200,
+    "data": {
+      "location": "Danau Toba Lekkk",
+      "city": "Parapat",
+      "image_loc": "https://res.cloudinary.com/dlosajdpy/image/upload/v1714981795/mvutqii5cxuoacmy20s5.jpg",
+      "parking_slots": []
+    },
+    "message": "berhasil mendapatkan data"
+  }]
+}

@@ -1,0 +1,567 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "code",
+    "data",
+    "message"
+  ],
+  "properties": {
+    "code": {
+      "type": "integer",
+      "default": 0,
+      "title": "The code Schema",
+      "examples": [
+        200
+      ]
+    },
+    "data": {
+      "type": "array",
+      "default": [],
+      "title": "The data Schema",
+      "items": {
+        "type": "object",
+        "title": "A Schema",
+        "required": [
+          "ID",
+          "Email",
+          "ParkingID",
+          "VehicleType",
+          "Floor",
+          "Slot",
+          "Price",
+          "Status"
+        ],
+        "properties": {
+          "ID": {
+            "type": "integer",
+            "title": "The ID Schema",
+            "examples": [
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              43,
+              44,
+              45,
+              46
+            ]
+          },
+          "Email": {
+            "type": "string",
+            "title": "The Email Schema",
+            "examples": [
+              "jodioperator2@gmail.com"
+            ]
+          },
+          "ParkingID": {
+            "type": "integer",
+            "title": "The ParkingID Schema",
+            "examples": [
+              2,
+              1,
+              7,
+              4,
+              5,
+              17,
+              19
+            ]
+          },
+          "VehicleType": {
+            "type": "string",
+            "title": "The VehicleType Schema",
+            "examples": [
+              "Motorcycle",
+              "Car"
+            ]
+          },
+          "Floor": {
+            "type": "integer",
+            "title": "The Floor Schema",
+            "examples": [
+              2,
+              1,
+              4,
+              5,
+              3,
+              6,
+              7
+            ]
+          },
+          "Slot": {
+            "type": "integer",
+            "title": "The Slot Schema",
+            "examples": [
+              2,
+              5,
+              3,
+              4
+            ]
+          },
+          "Price": {
+            "type": "integer",
+            "title": "The Price Schema",
+            "examples": [
+              9000,
+              10000,
+              6000,
+              7000,
+              8000,
+              5000
+            ]
+          },
+          "Status": {
+            "type": "string",
+            "title": "The Status Schema",
+            "examples": [
+              "available"
+            ]
+          }
+        },
+        "examples": [{
+          "ID": 31,
+          "Email": "jodioperator2@gmail.com",
+          "ParkingID": 2,
+          "VehicleType": "Motorcycle",
+          "Floor": 2,
+          "Slot": 2,
+          "Price": 9000,
+          "Status": "available"
+        },
+          {
+            "ID": 32,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 1,
+            "VehicleType": "Motorcycle",
+            "Floor": 1,
+            "Slot": 5,
+            "Price": 10000,
+            "Status": "available"
+          },
+          {
+            "ID": 33,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 2,
+            "VehicleType": "Motorcycle",
+            "Floor": 4,
+            "Slot": 2,
+            "Price": 6000,
+            "Status": "available"
+          },
+          {
+            "ID": 34,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 2,
+            "VehicleType": "Motorcycle",
+            "Floor": 5,
+            "Slot": 3,
+            "Price": 7000,
+            "Status": "available"
+          },
+          {
+            "ID": 35,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 2,
+            "VehicleType": "Motorcycle",
+            "Floor": 3,
+            "Slot": 3,
+            "Price": 7000,
+            "Status": "available"
+          },
+          {
+            "ID": 36,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 7,
+            "VehicleType": "Motorcycle",
+            "Floor": 1,
+            "Slot": 2,
+            "Price": 8000,
+            "Status": "available"
+          },
+          {
+            "ID": 37,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 2,
+            "VehicleType": "Motorcycle",
+            "Floor": 5,
+            "Slot": 2,
+            "Price": 6000,
+            "Status": "available"
+          },
+          {
+            "ID": 38,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 4,
+            "VehicleType": "Motorcycle",
+            "Floor": 4,
+            "Slot": 4,
+            "Price": 8000,
+            "Status": "available"
+          },
+          {
+            "ID": 39,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 5,
+            "VehicleType": "Motorcycle",
+            "Floor": 3,
+            "Slot": 4,
+            "Price": 8000,
+            "Status": "available"
+          },
+          {
+            "ID": 40,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 2,
+            "VehicleType": "Car",
+            "Floor": 6,
+            "Slot": 4,
+            "Price": 8000,
+            "Status": "available"
+          },
+          {
+            "ID": 43,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 17,
+            "VehicleType": "Motorcycle",
+            "Floor": 3,
+            "Slot": 2,
+            "Price": 5000,
+            "Status": "available"
+          },
+          {
+            "ID": 44,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 1,
+            "VehicleType": "Motorcycle",
+            "Floor": 7,
+            "Slot": 3,
+            "Price": 5000,
+            "Status": "available"
+          },
+          {
+            "ID": 45,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 19,
+            "VehicleType": "Motorcycle",
+            "Floor": 6,
+            "Slot": 2,
+            "Price": 5000,
+            "Status": "available"
+          },
+          {
+            "ID": 46,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 19,
+            "VehicleType": "Motorcycle",
+            "Floor": 7,
+            "Slot": 2,
+            "Price": 5000,
+            "Status": "available"
+          }]
+      },
+      "examples": [
+        [{
+          "ID": 31,
+          "Email": "jodioperator2@gmail.com",
+          "ParkingID": 2,
+          "VehicleType": "Motorcycle",
+          "Floor": 2,
+          "Slot": 2,
+          "Price": 9000,
+          "Status": "available"
+        },
+          {
+            "ID": 32,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 1,
+            "VehicleType": "Motorcycle",
+            "Floor": 1,
+            "Slot": 5,
+            "Price": 10000,
+            "Status": "available"
+          },
+          {
+            "ID": 33,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 2,
+            "VehicleType": "Motorcycle",
+            "Floor": 4,
+            "Slot": 2,
+            "Price": 6000,
+            "Status": "available"
+          },
+          {
+            "ID": 34,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 2,
+            "VehicleType": "Motorcycle",
+            "Floor": 5,
+            "Slot": 3,
+            "Price": 7000,
+            "Status": "available"
+          },
+          {
+            "ID": 35,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 2,
+            "VehicleType": "Motorcycle",
+            "Floor": 3,
+            "Slot": 3,
+            "Price": 7000,
+            "Status": "available"
+          },
+          {
+            "ID": 36,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 7,
+            "VehicleType": "Motorcycle",
+            "Floor": 1,
+            "Slot": 2,
+            "Price": 8000,
+            "Status": "available"
+          },
+          {
+            "ID": 37,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 2,
+            "VehicleType": "Motorcycle",
+            "Floor": 5,
+            "Slot": 2,
+            "Price": 6000,
+            "Status": "available"
+          },
+          {
+            "ID": 38,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 4,
+            "VehicleType": "Motorcycle",
+            "Floor": 4,
+            "Slot": 4,
+            "Price": 8000,
+            "Status": "available"
+          },
+          {
+            "ID": 39,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 5,
+            "VehicleType": "Motorcycle",
+            "Floor": 3,
+            "Slot": 4,
+            "Price": 8000,
+            "Status": "available"
+          },
+          {
+            "ID": 40,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 2,
+            "VehicleType": "Car",
+            "Floor": 6,
+            "Slot": 4,
+            "Price": 8000,
+            "Status": "available"
+          },
+          {
+            "ID": 43,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 17,
+            "VehicleType": "Motorcycle",
+            "Floor": 3,
+            "Slot": 2,
+            "Price": 5000,
+            "Status": "available"
+          },
+          {
+            "ID": 44,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 1,
+            "VehicleType": "Motorcycle",
+            "Floor": 7,
+            "Slot": 3,
+            "Price": 5000,
+            "Status": "available"
+          },
+          {
+            "ID": 45,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 19,
+            "VehicleType": "Motorcycle",
+            "Floor": 6,
+            "Slot": 2,
+            "Price": 5000,
+            "Status": "available"
+          },
+          {
+            "ID": 46,
+            "Email": "jodioperator2@gmail.com",
+            "ParkingID": 19,
+            "VehicleType": "Motorcycle",
+            "Floor": 7,
+            "Slot": 2,
+            "Price": 5000,
+            "Status": "available"
+          }]
+      ]
+    },
+    "message": {
+      "type": "string",
+      "default": "",
+      "title": "The message Schema",
+      "examples": [
+        "success get all parking slot"
+      ]
+    }
+  },
+  "examples": [{
+    "code": 200,
+    "data": [{
+      "ID": 31,
+      "Email": "jodioperator2@gmail.com",
+      "ParkingID": 2,
+      "VehicleType": "Motorcycle",
+      "Floor": 2,
+      "Slot": 2,
+      "Price": 9000,
+      "Status": "available"
+    },
+      {
+        "ID": 32,
+        "Email": "jodioperator2@gmail.com",
+        "ParkingID": 1,
+        "VehicleType": "Motorcycle",
+        "Floor": 1,
+        "Slot": 5,
+        "Price": 10000,
+        "Status": "available"
+      },
+      {
+        "ID": 33,
+        "Email": "jodioperator2@gmail.com",
+        "ParkingID": 2,
+        "VehicleType": "Motorcycle",
+        "Floor": 4,
+        "Slot": 2,
+        "Price": 6000,
+        "Status": "available"
+      },
+      {
+        "ID": 34,
+        "Email": "jodioperator2@gmail.com",
+        "ParkingID": 2,
+        "VehicleType": "Motorcycle",
+        "Floor": 5,
+        "Slot": 3,
+        "Price": 7000,
+        "Status": "available"
+      },
+      {
+        "ID": 35,
+        "Email": "jodioperator2@gmail.com",
+        "ParkingID": 2,
+        "VehicleType": "Motorcycle",
+        "Floor": 3,
+        "Slot": 3,
+        "Price": 7000,
+        "Status": "available"
+      },
+      {
+        "ID": 36,
+        "Email": "jodioperator2@gmail.com",
+        "ParkingID": 7,
+        "VehicleType": "Motorcycle",
+        "Floor": 1,
+        "Slot": 2,
+        "Price": 8000,
+        "Status": "available"
+      },
+      {
+        "ID": 37,
+        "Email": "jodioperator2@gmail.com",
+        "ParkingID": 2,
+        "VehicleType": "Motorcycle",
+        "Floor": 5,
+        "Slot": 2,
+        "Price": 6000,
+        "Status": "available"
+      },
+      {
+        "ID": 38,
+        "Email": "jodioperator2@gmail.com",
+        "ParkingID": 4,
+        "VehicleType": "Motorcycle",
+        "Floor": 4,
+        "Slot": 4,
+        "Price": 8000,
+        "Status": "available"
+      },
+      {
+        "ID": 39,
+        "Email": "jodioperator2@gmail.com",
+        "ParkingID": 5,
+        "VehicleType": "Motorcycle",
+        "Floor": 3,
+        "Slot": 4,
+        "Price": 8000,
+        "Status": "available"
+      },
+      {
+        "ID": 40,
+        "Email": "jodioperator2@gmail.com",
+        "ParkingID": 2,
+        "VehicleType": "Car",
+        "Floor": 6,
+        "Slot": 4,
+        "Price": 8000,
+        "Status": "available"
+      },
+      {
+        "ID": 43,
+        "Email": "jodioperator2@gmail.com",
+        "ParkingID": 17,
+        "VehicleType": "Motorcycle",
+        "Floor": 3,
+        "Slot": 2,
+        "Price": 5000,
+        "Status": "available"
+      },
+      {
+        "ID": 44,
+        "Email": "jodioperator2@gmail.com",
+        "ParkingID": 1,
+        "VehicleType": "Motorcycle",
+        "Floor": 7,
+        "Slot": 3,
+        "Price": 5000,
+        "Status": "available"
+      },
+      {
+        "ID": 45,
+        "Email": "jodioperator2@gmail.com",
+        "ParkingID": 19,
+        "VehicleType": "Motorcycle",
+        "Floor": 6,
+        "Slot": 2,
+        "Price": 5000,
+        "Status": "available"
+      },
+      {
+        "ID": 46,
+        "Email": "jodioperator2@gmail.com",
+        "ParkingID": 19,
+        "VehicleType": "Motorcycle",
+        "Floor": 7,
+        "Slot": 2,
+        "Price": 5000,
+        "Status": "available"
+      }],
+    "message": "success get all parking slot"
+  }]
+}

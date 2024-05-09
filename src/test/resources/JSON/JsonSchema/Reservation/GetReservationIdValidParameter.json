@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "code",
+    "data",
+    "message"
+  ],
+  "properties": {
+    "code": {
+      "type": "integer",
+      "default": 0,
+      "title": "The code Schema",
+      "examples": [
+        200
+      ]
+    },
+    "data": {
+      "type": "object",
+      "default": {},
+      "title": "The data Schema",
+      "required": [
+        "reservation_id",
+        "email",
+        "parking_slot_id",
+        "vehicle_type",
+        "floor",
+        "slot",
+        "price",
+        "parking_id",
+        "image_loc",
+        "location",
+        "city",
+        "payment_status"
+      ],
+      "properties": {
+        "reservation_id": {
+          "type": "integer",
+          "default": 0,
+          "title": "The reservation_id Schema",
+          "examples": [
+            0
+          ]
+        },
+        "email": {
+          "type": "string",
+          "default": "",
+          "title": "The email Schema",
+          "examples": [
+            ""
+          ]
+        },
+        "parking_slot_id": {
+          "type": "integer",
+          "default": 0,
+          "title": "The parking_slot_id Schema",
+          "examples": [
+            0
+          ]
+        },
+        "vehicle_type": {
+          "type": "string",
+          "default": "",
+          "title": "The vehicle_type Schema",
+          "examples": [
+            ""
+          ]
+        },
+        "floor": {
+          "type": "integer",
+          "default": 0,
+          "title": "The floor Schema",
+          "examples": [
+            0
+          ]
+        },
+        "slot": {
+          "type": "integer",
+          "default": 0,
+          "title": "The slot Schema",
+          "examples": [
+            0
+          ]
+        },
+        "price": {
+          "type": "integer",
+          "default": 0,
+          "title": "The price Schema",
+          "examples": [
+            0
+          ]
+        },
+        "parking_id": {
+          "type": "integer",
+          "default": 0,
+          "title": "The parking_id Schema",
+          "examples": [
+            0
+          ]
+        },
+        "image_loc": {
+          "type": "string",
+          "default": "",
+          "title": "The image_loc Schema",
+          "examples": [
+            ""
+          ]
+        },
+        "location": {
+          "type": "string",
+          "default": "",
+          "title": "The location Schema",
+          "examples": [
+            ""
+          ]
+        },
+        "city": {
+          "type": "string",
+          "default": "",
+          "title": "The city Schema",
+          "examples": [
+            ""
+          ]
+        },
+        "payment_status": {
+          "type": "string",
+          "default": "",
+          "title": "The payment_status Schema",
+          "examples": [
+            ""
+          ]
+        }
+      },
+      "examples": [{
+        "reservation_id": 0,
+        "email": "",
+        "parking_slot_id": 0,
+        "vehicle_type": "",
+        "floor": 0,
+        "slot": 0,
+        "price": 0,
+        "parking_id": 0,
+        "image_loc": "",
+        "location": "",
+        "city": "",
+        "payment_status": ""
+      }]
+    },
+    "message": {
+      "type": "string",
+      "default": "",
+      "title": "The message Schema",
+      "examples": [
+        "success get reservation info"
+      ]
+    }
+  },
+  "examples": [{
+    "code": 200,
+    "data": {
+      "reservation_id": 0,
+      "email": "",
+      "parking_slot_id": 0,
+      "vehicle_type": "",
+      "floor": 0,
+      "slot": 0,
+      "price": 0,
+      "parking_id": 0,
+      "image_loc": "",
+      "location": "",
+      "city": "",
+      "payment_status": ""
+    },
+    "message": "success get reservation info"
+  }]
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "code",
+    "data",
+    "message"
+  ],
+  "properties": {
+    "code": {
+      "type": "integer",
+      "default": 0,
+      "title": "The code Schema",
+      "examples": [
+        200
+      ]
+    },
+    "data": {
+      "type": "object",
+      "default": {},
+      "title": "The data Schema",
+      "required": [
+        "fullname",
+        "email",
+        "token"
+      ],
+      "properties": {
+        "fullname": {
+          "type": "string",
+          "default": "",
+          "title": "The fullname Schema",
+          "examples": [
+            "Jodi User 5"
+          ]
+        },
+        "email": {
+          "type": "string",
+          "default": "",
+          "title": "The email Schema",
+          "examples": [
+            "jodiuser2@gmail.com"
+          ]
+        },
+        "token": {
+          "type": "string",
+          "default": "",
+          "title": "The token Schema",
+          "examples": [
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvZGl1c2VyMkBnbWFpbC5jb20iLCJleHAiOjE3MTQ5MTY4NTYsImlhdCI6MTcxNDkwNjA1Niwicm9sZSI6InVzZXIifQ.bW7gQobZHbCowpyWtIStCtT33mipGbJiCJDhkWNEkKY"
+          ]
+        }
+      },
+      "examples": [{
+        "fullname": "Jodi User 5",
+        "email": "jodiuser2@gmail.com",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvZGl1c2VyMkBnbWFpbC5jb20iLCJleHAiOjE3MTQ5MTY4NTYsImlhdCI6MTcxNDkwNjA1Niwicm9sZSI6InVzZXIifQ.bW7gQobZHbCowpyWtIStCtT33mipGbJiCJDhkWNEkKY"
+      }]
+    },
+    "message": {
+      "type": "string",
+      "default": "",
+      "title": "The message Schema",
+      "examples": [
+        "berhasil login"
+      ]
+    }
+  },
+  "examples": [{
+    "code": 200,
+    "data": {
+      "fullname": "Jodi User 5",
+      "email": "jodiuser2@gmail.com",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvZGl1c2VyMkBnbWFpbC5jb20iLCJleHAiOjE3MTQ5MTY4NTYsImlhdCI6MTcxNDkwNjA1Niwicm9sZSI6InVzZXIifQ.bW7gQobZHbCowpyWtIStCtT33mipGbJiCJDhkWNEkKY"
+    },
+    "message": "berhasil login"
+  }]
+}
